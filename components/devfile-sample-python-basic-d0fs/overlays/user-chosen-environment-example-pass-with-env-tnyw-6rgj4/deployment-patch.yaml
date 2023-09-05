@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-d0fs
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-aavm/devfile-sample-python-basic-d0fs@sha256:28891e0eb57ace796daae4c5e89c454075394efe01fc0d516a24f3b39e762d96
+        name: my-python
+        resources: {}
+status: {}
